@@ -17,13 +17,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-        <!-- Custom Styles Section -->
+    <!-- Custom Styles Section -->
 
-        <style>
-            .font-lato {
-                font-family: 'Lato', sans-serif;
-            }
-        </style>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 
     <!-- Font-Awesome Linked -->
     <script src="https://kit.fontawesome.com/22d6e883bc.js" crossorigin="anonymous"></script>
@@ -46,46 +46,70 @@
 
 <body class="font-lato">
 
-    <header class="container mx-auto">
-        <nav>
-            <div class="navbar bg-fruit-primary rounded-[600px] mt-6 px-6">
-                <div class="navbar-start">
-                    <ul class="flex space-x-6 text-lg text-white font-medium">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">All Fruits</a></li>
-                    </ul>
+    <header class="container mx-auto mt-6">
+        <!-- Navigation Section Here -->
+
+        <nav
+            class="relative px-5 flex justify-between items-center lg:rounded-full h-14 lg:bg-fruit-primary drop-shadow-md">
+
+            <!-- Logo only for Mobile -->
+            <div class="md:hidden lg:hidden flex items-center gap-3">
+                <img src="./images/logo.png" alt="" class="w-8">
+                <a href="#" class="text-black text-2xl font-semibold">
+                    <span class="text-black">Fruit Brust</span>
+                </a>
+            </div>
+
+            <div class="hidden flex flex-col 
+                md:flex md:space-y-0 md:relative md:top-0 md:right-0 md:p-0 md:flex-row md:h-full md:flex-grow md:justify-between md:items-center md:ml-10 md:bg-inherit">
+
+                <!-- Menu Links -->
+                <div
+                    class="order-last flex flex-col items-end text-white space-y-3  md:flex-row md:items-start md:order-first md:space-y-0 md:space-x-3">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Shop</a>
+                    <a href="#">All Fruits</a>
                 </div>
-                <div class="navbar-center">
-                  <div class="flex items-center gap-4">
-                    <a href=""><img src="./images/logo.png" alt=""></a>
-                    <a class="text-3xl text-white font-semibold normal-case">Fruit Brust</a>
-                  </div>
+                <!-- Logo -->
+                <div class="flex items-center gap-5">
+                    <img src="./images/logo.png" alt="" class="w-9">
+                    <a href="#" class="text-white text-2xl font-semibold">
+                        <span class="text-white">Fruit Brust</span>
+                    </a>
                 </div>
-                <div class="navbar-end">
-                    <form>
-                        <label class="relative block">
-                            <input
-                                class="w-full bg-white placeholder:font-italitc border border-slate-400 drop-shadow-md rounded-[600px] py-2 pl-6 pr-15 focus:outline-none"
-                                placeholder="Search here" type="text" />
-                
-                            <span class="absolute inset-y-0 right-0 flex items-center pr-3">
-                                <svg class="h-5 w-5 fill-black" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
-                                    height="30" viewBox="0 0 30 30">
-                                    <path
-                                        d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
-                                    </path>
-                                </svg>
-                            </span>
-                        </label>
-                    </form>
-              </div>
+
+                <!-- Search box -->
+                <form class="order-first mb-10 md:mb-0 md:order-last md:pr-8" action="">
+                    <input class="w-72 py-1 pl-3 pr-10 rounded-full focus:outline-0" type="text"
+                        placeholder="Search here" name="search">
+                    <button class="-ml-8 border-6 bg-trasparent" type="submit"><i
+                            class="fa fa-search text-gray-400"></i></button>
+                </form>
+            </div>
+
+            <!-- Dropdown For Mobile -->
+
+            <div class="dropdown dropdown-left lg:hidden">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <i class="fa-bars fa-solid md:hidden text-black text-2xl"></i>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+
+
         </nav>
     </header>
 
-    <main>
-        
+    <main class="container mx-auto">
+
+
+
     </main>
 
     <footer>
