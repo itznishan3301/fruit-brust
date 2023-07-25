@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit-Brust</title>
+
+    <!-- Tailwind & DaisyUI Linked -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon Linked -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- Google Fonts Linked -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+        <!-- Custom Styles Section -->
+
+        <style>
+            .font-lato {
+                font-family: 'Lato', sans-serif;
+            }
+        </style>
+
+    <!-- Font-Awesome Linked -->
+    <script src="https://kit.fontawesome.com/22d6e883bc.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Colors Section Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fruit-primary': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="font-lato">
+
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-fruit-primary rounded-[600px] mt-6 px-6">
+                <div class="navbar-start">
+                    <ul class="flex space-x-6 text-lg text-white font-medium">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                  <div class="flex items-center gap-4">
+                    <a href=""><img src="./images/logo.png" alt=""></a>
+                    <a class="text-3xl text-white font-semibold normal-case">Fruit Brust</a>
+                  </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="justify-center">
+                        <input
+                          type="text"
+                          class="border border-gray-300 rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring focus:border-blue-300"
+                          placeholder="Search here"
+                        />
+                        <div class="pl-3 flex items-center pointer-events-none justify-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        </div>
+                      </div>
+                      
+
+
+            
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
