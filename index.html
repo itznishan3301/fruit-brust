@@ -50,7 +50,7 @@
     <!-- Navigation Section Here -->
 
     <nav
-      class="relative px-5 flex justify-between items-center lg:rounded-full h-14 lg:bg-fruit-primary drop-shadow-md">
+      class="relative px-5 flex justify-between items-center rounded-full h-14 md:bg-fruit-primary lg:bg-fruit-primary drop-shadow-md">
 
       <!-- Logo only for Mobile -->
       <div class="md:hidden lg:hidden flex items-center gap-3">
@@ -61,8 +61,7 @@
       </div>
 
       <div
-        class="hidden flex flex-col 
-                md:flex md:space-y-0 md:relative md:top-0 md:right-0 md:p-0 md:flex-row md:h-full md:flex-grow md:justify-between md:items-center md:ml-10 md:bg-inherit">
+        class="hidden flex flex-col md:flex md:space-y-0 md:relative md:top-0 md:right-0 md:p-0 md:flex-row md:h-full md:flex-grow md:justify-between md:items-center md:ml-10 md:bg-inherit">
 
         <!-- Menu Links -->
         <div
@@ -73,9 +72,9 @@
           <a href="#">All Fruits</a>
         </div>
         <!-- Logo -->
-        <div class="flex items-center gap-5">
+        <div class="flex items-center lg:gap-5">
           <img src="./images/logo.png" alt="" class="w-9">
-          <a href="#" class="text-white text-2xl font-semibold">
+          <a href="#" class="text-white lg:text-2xl font-semibold">
             <span class="text-white">Fruit Brust</span>
           </a>
         </div>
@@ -90,7 +89,7 @@
 
       <!-- Dropdown For Mobile -->
 
-      <div class="dropdown dropdown-left lg:hidden">
+      <div class="dropdown dropdown-left md:hidden lg:hidden">
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <i class="fa-bars fa-solid md:hidden text-black text-2xl"></i>
         </label>
@@ -192,7 +191,7 @@
 
       <!-- Popup above Banner Section -->
       <div
-        class="container mx-auto justify-around text-center rounded-lg items-center absolute -bottom-60 left-5 right-0  w-[1196px] h-[250px] lg:bg-white hidden lg:flex md:flex shadow-xl">
+        class="container mx-auto justify-around text-center rounded-lg items-center absolute -bottom-60 left-5 right-0  w-[1196px] h-[250px] lg:bg-white hidden md:hidden lg:flex md:flex shadow-xl">
         <div class="hidden lg:block md:block">
           <img src="./images/fruit1.png" alt="">
           <h1 class="text-black">Grape</h1>
@@ -232,8 +231,8 @@
             has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years.</p>
         </div>
 
-        <div class="ml-16 lg:ml-0">
-          <div class="flex items-center my-2 gap-3">
+        <div class="ml-16 md:pl-36 lg:ml-0">
+          <div class="flex items-center md:items-center my-2 gap-3">
             <div class="pr-5 text-center">
               <span class="countdown font-bold text-4xl">
                 <span style="--value:15;"></span>:
@@ -264,7 +263,7 @@
 
       <!-- Card Section Here -->
 
-      <div class=" lg:flex justify-around mx-10 lg:mx-0 lg:my-10 gap-3">
+      <div class=" md:grid md:grid-cols-2 lg:flex justify-around mx-10 lg:mx-0 lg:my-10 gap-3">
 
         <!--Card - 1-->
 
@@ -306,7 +305,7 @@
                         <div class="modal-action flex">
                           <!-- if there is a button in form, it will close the modal -->
                           <button class="btn text-fruit-primary border-fruit-primary">Close</button>
-                          <button class="btn bg-fruit-primary">Buy Now</button>
+                          <button class="btn bg-fruit-primary text-white">Buy Now</button>
                         </div>
                       </div>
                     </div>
@@ -357,7 +356,7 @@
                         <div class="modal-action flex">
                           <!-- if there is a button in form, it will close the modal -->
                           <button class="btn text-fruit-primary border-fruit-primary">Close</button>
-                          <button class="btn bg-fruit-primary">Buy Now</button>
+                          <button class="btn bg-fruit-primary text-white">Buy Now</button>
                         </div>
                       </div>
                     </div>
@@ -408,7 +407,7 @@
                         <div class="modal-action flex">
                           <!-- if there is a button in form, it will close the modal -->
                           <button class="btn text-fruit-primary border-fruit-primary">Close</button>
-                          <button class="btn bg-fruit-primary">Buy Now</button>
+                          <button class="btn bg-fruit-primary text-white">Buy Now</button>
                         </div>
                       </div>
                     </div>
@@ -459,7 +458,7 @@
                         <div class="modal-action flex">
                           <!-- if there is a button in form, it will close the modal -->
                           <button class="btn text-fruit-primary border-fruit-primary">Close</button>
-                          <button class="btn bg-fruit-primary">Buy Now</button>
+                          <button class="btn bg-fruit-primary text-white">Buy Now</button>
                         </div>
                       </div>
                     </div>
