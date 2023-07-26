@@ -2,119 +2,229 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit-Brust</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit-Brust</title>
 
-    <!-- Tailwind & DaisyUI Linked -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind & DaisyUI Linked -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Favicon Linked -->
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <!-- Google Fonts Linked -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Favicon Linked -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <!-- Google Fonts Linked -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <!-- Custom Styles Section -->
+  <!-- Custom Styles Section -->
 
-    <style>
-        .font-lato {
-            font-family: 'Lato', sans-serif;
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+  <!-- Font-Awesome Linked -->
+  <script src="https://kit.fontawesome.com/22d6e883bc.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Colors Section Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fruit-primary': '#F85559',
+          }
         }
-    </style>
-
-    <!-- Font-Awesome Linked -->
-    <script src="https://kit.fontawesome.com/22d6e883bc.js" crossorigin="anonymous"></script>
-
-    <!-- Custom Colors Section Tailwind -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'fruit-primary': '#F85559',
-                    }
-                }
-            }
-        }
-    </script>
+      }
+    }
+  </script>
 
 
 </head>
 
 <body class="font-lato">
 
-    <header class="container mx-auto mt-6">
-        <!-- Navigation Section Here -->
+  <header class="container mx-auto mt-7">
+    <!-- Navigation Section Here -->
 
-        <nav
-            class="relative px-5 flex justify-between items-center lg:rounded-full h-14 lg:bg-fruit-primary drop-shadow-md">
+    <nav class="relative px-5 flex justify-between items-center lg:rounded-full h-14 lg:bg-fruit-primary drop-shadow-md">
 
-            <!-- Logo only for Mobile -->
-            <div class="md:hidden lg:hidden flex items-center gap-3">
-                <img src="./images/logo.png" alt="" class="w-8">
-                <a href="#" class="text-black text-2xl font-semibold">
-                    <span class="text-black">Fruit Brust</span>
-                </a>
-            </div>
+      <!-- Logo only for Mobile -->
+      <div class="md:hidden lg:hidden flex items-center gap-3">
+        <img src="./images/logo.png" alt="" class="w-8">
+        <a href="#" class="text-black text-2xl font-semibold">
+          <span class="text-black">Fruit Brust</span>
+        </a>
+      </div>
 
-            <div class="hidden flex flex-col 
+      <div
+        class="hidden flex flex-col 
                 md:flex md:space-y-0 md:relative md:top-0 md:right-0 md:p-0 md:flex-row md:h-full md:flex-grow md:justify-between md:items-center md:ml-10 md:bg-inherit">
 
-                <!-- Menu Links -->
-                <div
-                    class="order-last flex flex-col items-end text-white space-y-3  md:flex-row md:items-start md:order-first md:space-y-0 md:space-x-3">
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Shop</a>
-                    <a href="#">All Fruits</a>
-                </div>
-                <!-- Logo -->
-                <div class="flex items-center gap-5">
-                    <img src="./images/logo.png" alt="" class="w-9">
-                    <a href="#" class="text-white text-2xl font-semibold">
-                        <span class="text-white">Fruit Brust</span>
-                    </a>
-                </div>
+        <!-- Menu Links -->
+        <div
+          class="order-last flex flex-col items-end text-white space-y-3  md:flex-row md:items-start md:order-first md:space-y-0 md:space-x-3">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Shop</a>
+          <a href="#">All Fruits</a>
+        </div>
+        <!-- Logo -->
+        <div class="flex items-center gap-5">
+          <img src="./images/logo.png" alt="" class="w-9">
+          <a href="#" class="text-white text-2xl font-semibold">
+            <span class="text-white">Fruit Brust</span>
+          </a>
+        </div>
 
-                <!-- Search box -->
-                <form class="order-first mb-10 md:mb-0 md:order-last md:pr-8" action="">
-                    <input class="w-72 py-1 pl-3 pr-10 rounded-full focus:outline-0" type="text"
-                        placeholder="Search here" name="search">
-                    <button class="-ml-8 border-6 bg-trasparent" type="submit"><i
-                            class="fa fa-search text-gray-400"></i></button>
-                </form>
+        <!-- Search box -->
+        <form class="order-first mb-10 md:mb-0 md:order-last md:pr-8" action="">
+          <input class="w-72 py-1 pl-3 pr-10 rounded-full focus:outline-0" type="text" placeholder="Search here"
+            name="search">
+          <button class="-ml-8 border-6 bg-trasparent" type="submit"><i class="fa fa-search text-gray-400"></i></button>
+        </form>
+      </div>
+
+      <!-- Dropdown For Mobile -->
+
+      <div class="dropdown dropdown-left lg:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <i class="fa-bars fa-solid md:hidden text-black text-2xl"></i>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Banner Section Here -->
+
+    <section class="carousel w-full my-10">
+      <div id="slide1" class="carousel-item relative w-full relative">
+        <div class="hero min-h-screen" style="background-image: 
+       url(images/banner1.png);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold text-[#fff]">Exotic tastes at your
+                doorstep</h1>
+              <p class="mb-5 text-white">We supply highly quality organic products</p>
+              <button class="btn btn-primary text-white">Shop Now</button>
+
             </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 
+       top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
 
-            <!-- Dropdown For Mobile -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: 
+      url(images/banner2.png);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold text-[#fff]">Exotic tastes at your
+                doorstep</h1>
+              <p class="mb-5 text-white">We supply highly quality organic products</p>
+              <button class="btn btn-primary text-white">Shop Now</button>
 
-            <div class="dropdown dropdown-left lg:hidden">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                    <i class="fa-bars fa-solid md:hidden text-black text-2xl"></i>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
             </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 
+       top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: 
+      url(images/banner3.png);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold text-[#fff]">Exotic tastes at your
+                doorstep</h1>
+              <p class="mb-5 text-white">We supply highly quality organic products</p>
+              <button class="btn btn-primary text-white">Shop Now</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 
+       top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: 
+      url(images/banner4.png);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold text-[#fff]">Exotic tastes at your
+                doorstep</h1>
+              <p class="mb-5 text-white">We supply highly quality organic products</p>
+              <button class="btn btn-primary text-white">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 
+       top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- Popup above Banner Section -->
+
+      <div class="justify-around text-center rounded-lg items-center absolute -bottom-60 left-20 right-0  w-[1196px] h-[250px] lg:bg-white hidden lg:flex md:flex">
+        <div class="hidden lg:block md:block">
+          <img src="./images/fruit1.png" alt="">
+          <h1 class="text-black">Grape</h1>
+        </div>
+        <div class="hidden lg:block md:block">
+          <img src="./images/fruit2.png" alt="">
+          <h1 class="text-black">Orange</h1>
+        </div>
+        <div class="hidden lg:block md:block">
+          <img src="./images/fruit3.png" alt="">
+          <h1 class="text-black">Mango</h1>
+        </div>
+        <div class="hidden lg:block md:block">
+          <img src="./images/fruit4.png" alt="">
+          <h1 class="text-black">Strawberry</h1>
+        </div>
+        <div class="hidden lg:block md:block">
+          <img src="./images/fruit5.png" alt="">
+          <h1 class="text-black">Mango</h1>
+        </div>
+      </div>
+
+    </section>
+
+  </header>
+
+  <main class="container mx-auto">
 
 
-        </nav>
-    </header>
+  </main>
 
-    <main class="container mx-auto">
+  <footer>
 
-
-
-    </main>
-
-    <footer>
-
-    </footer>
+  </footer>
 
 </body>
 
